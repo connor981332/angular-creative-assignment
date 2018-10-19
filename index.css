@@ -24,7 +24,6 @@
 .CommentDirective {
   text-align: center;
   background-color: CadetBlue;
-  color: white;
   font-size: 20px;
   padding: 25px;
 }
@@ -38,4 +37,8 @@
 
 .CommentsList {
   list-style-type: none;
+}
+
+#instructions {
+  color: white;
 }
