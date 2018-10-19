@@ -1,0 +1,41 @@
+.TopDiv {
+  background-color: blue;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.TopHeader {
+  border-style: solid;
+  border-radius: 5px;
+  color: white;
+  width: 400px;
+  margin: auto;
+}
+
+.Post {
+  text-align: center;
+}
+
+.PostImage {
+  width: 500px;
+}
+
+.CommentDirective {
+  text-align: center;
+  background-color: CadetBlue;
+  color: white;
+  font-size: 20px;
+  padding: 25px;
+}
+
+.Comment {
+  border-style: solid;
+  border-radius: 5px;
+  padding: 5px;
+  margin: auto;
+}
+
+.CommentsList {
+  list-style-type: none;
+}

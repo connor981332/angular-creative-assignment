@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- include our dependency on angular -->
+    <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="index.js"></script>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>Connor's Fakebook Post</title>
+  </head>
+  <body>
+    <div ng-app='app' ng-controller='mainCtrl'> <!-- [1],[2] -->
+      <div class='TopDiv container-fluid'>
+        <h1 class='TopHeader'>Fakebook</h1>
+      </div>
+      <div class='Post'>
+        <h2 class='PostTitle'>Check out Connor's latest post!</h2>
+        <div class='PostImageContainer'>
+          <img class = 'PostImage' src="sammy.jpg" alt="Post Image">
+        </div>
+        <div class='PostDescription'>
+          <br>
+          <p>Now this is how a <em>real man</em> makes his sandwich!!!</p>
+          <br>
+          <p id='count'>Comments: 0</p>
+        </div>
+      </div>
+
+      <div class='CommentDirective container-fluid'>
+        <p>Post a comment!</p>
+        <form class='MainForm' name='commentForm' ng-submit='addComment(commentForm)'>
+          <input placeholder='Comment' ng-model='commentForm.comment'/>
+          <button type='submit'>Post</button>
+        </form>
+      </div>
+      <ul class='CommentsList'>
+        <br>
+        <li ng-repeat='comment in comments'>
+          <comment comment='comment'></comment>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
